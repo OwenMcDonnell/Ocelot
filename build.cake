@@ -127,6 +127,7 @@ Task("RunUnitTests")
         
 			OpenCover(tool => 
 				{
+					Information("In OpenCover Func");
 					tool.DotNetCoreTest(unitTestAssemblies);
 				},
 				new FilePath(coverageSummaryFile),
@@ -144,6 +145,7 @@ Task("RunUnitTests")
 		
 			if (AppVeyor.IsRunningOnAppVeyor)
 			{
+				Information("In Appveyor condition");
 				var repoToken = EnvironmentVariable(coverallsRepoToken);
 				if (string.IsNullOrEmpty(repoToken))
 				{
