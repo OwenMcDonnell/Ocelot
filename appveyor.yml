@@ -1,0 +1,10 @@
+version: '{build}'
+skip_tags: true
+image: Visual Studio 2017
+environment:
+  nuget-apikey-unstable: redacted
+  coveralls-repo-token-ocelot: redacted
+build_script:
+- ps: ./build-and-run-tests.ps1
+test: off
+deploy: off
