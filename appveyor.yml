@@ -1,8 +1,6 @@
 version: '{build}'
 skip_tags: true
 image: Visual Studio 2017
-environment:
-  test_var: test_val
 install:
   - choco install dotnetcore-sdk --version 2.1.301
 environment:
