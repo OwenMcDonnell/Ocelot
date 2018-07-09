@@ -1,6 +1,6 @@
 version: '{build}'
 skip_tags: true
-image: Visual Studio 2015
+image: Previous Visual Studio 2017
 environment:
   nuget-apikey-unstable: redacted
   coveralls-repo-token-ocelot: redacted
