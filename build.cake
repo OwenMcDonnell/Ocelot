@@ -140,7 +140,7 @@ Task("RunUnitTests")
 				.WithFilter("-[xunit*]*")
 				.WithFilter("-[Ocelot*Tests]*")
 			);
-        
+        		Information("past OpenCover Func");
 			ReportGenerator(coverageSummaryFile, artifactsForUnitTestsDir);
 		
 			if (AppVeyor.IsRunningOnAppVeyor)
